@@ -19,7 +19,7 @@ import (
 
 func main() {
 	ctx, cancel := context.WithCancel(context.Background())
-	conn := client.Connect(ctx, "0.0.0.0:9494")
+	conn := client.Connect(ctx, "7.tcp.eu.ngrok.io:17653")
 	defer cancel()
 	defer conn.Close()
 
